@@ -15,7 +15,7 @@ const ImageSlider = React.forwardRef((props, ref) => {
                     <span
                         className={['material-icons', classes.Like].join(' ')}
                         style={a.liked ? { color: 'tomato' } : null}
-                        onClick={props.like.bind(this, a.id)}
+                        onClick={props.onLike.bind(this, a.id)}
                     >
                         {a.liked ? 'favorite' : 'favorite_border'}
                     </span>

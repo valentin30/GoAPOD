@@ -33,7 +33,7 @@ class Post extends Component {
                 this.props.history.push('/not-found')
             })
     }
-    like = () => {
+    onLike = () => {
         if (!this.context.id) {
             // Show sign in modal
         }
@@ -44,7 +44,9 @@ class Post extends Component {
     render() {
         let article = <Loader />
         if (this.state.article) {
-            article = <PostComponent {...this.state.article} like={this.like} />
+            article = (
+                <PostComponent {...this.state.article} onLike={this.onLike} />
+            )
         } else if (this.state.noArticle) {
             article = <Redirect to={'/not-found'} />
         }

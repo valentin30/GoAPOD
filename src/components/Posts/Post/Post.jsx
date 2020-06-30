@@ -11,7 +11,7 @@ const Post = props => {
                 <span
                     className={['material-icons', classes.Like].join(' ')}
                     style={props.liked ? { color: 'tomato' } : null}
-                    onClick={props.like}
+                    onClick={props.onLike}
                 >
                     {props.liked ? 'favorite' : 'favorite_border'}
                 </span>

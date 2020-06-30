@@ -13,7 +13,7 @@ class Home extends Component {
         this.imageRef = React.createRef()
         this.nextImageHandler = this.nextImageHandler.bind(this)
         this.prevImageHandler = this.prevImageHandler.bind(this)
-        this.like = this.like.bind(this)
+        this.onLike = this.onLike.bind(this)
     }
     static contextType = AuthContext
     async componentDidMount() {
@@ -30,7 +30,7 @@ class Home extends Component {
                 console.log('Error occured')
             })
     }
-    like(id) {
+    onLike(id) {
         if (!this.context.id) {
             // Show sign in modal
         }
@@ -77,7 +77,7 @@ class Home extends Component {
                     next={this.nextImageHandler}
                     prev={this.prevImageHandler}
                     ref={this.imageRef}
-                    like={this.like}
+                    onLike={this.onLike}
                 />
             </>
         )
