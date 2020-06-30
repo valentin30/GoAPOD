@@ -1,0 +1,25 @@
+.Date {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    color: #747474;
+}
+.Date p {
+    margin: 1px 0 0 3px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.Date span {
+    font-weight: 200;
+    font-size: 1rem;
+}
+@media (max-width: 800px) {
+    .Date p {
+        margin: 0 0 0 2px;
+        font-size: 0.8rem;
+    }
+    .Date span {
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,59 @@
+.Burger {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    transition: 0.3s;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.Pipe,
+.Dynamic div {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.Dynamic {
+    position: relative;
+}
+
+.Dynamic div:first-of-type {
+    height: 1px;
+}
+.Dynamic div:last-of-type {
+    height: 0px;
+}
+.Burger:active .Dynamic div:last-of-type,
+.Active .Dynamic div:last-of-type {
+    transform: rotate(-45deg);
+    position: absolute;
+    height: 1px;
+}
+.Burger:active .Dynamic div:first-of-type,
+.Active .Dynamic div:first-of-type {
+    transform: rotate(45deg);
+    position: absolute;
+    height: 1px;
+}
+
+.Burger:active .Pipe,
+.Active .Pipe {
+    opacity: 0;
+}
+
+.Burger:active,
+.Active {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 1000px) {
+    .Burger {
+        display: none;
+    }
+}

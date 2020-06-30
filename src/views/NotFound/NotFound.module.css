@@ -1,0 +1,43 @@
+.NotFound {
+    margin: auto;
+}
+.NotFound h1 {
+    font-size: 10rem;
+    text-align: center;
+    margin: 100px auto 0;
+}
+.NotFound p {
+    font-size: 1.2rem;
+    max-width: 300px;
+    text-align: center;
+    margin: -20px auto 100px;
+}
+.NotFound a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 1.3rem;
+    width: fit-content;
+    padding: 10px 16px;
+    color: white;
+    background-color: orange;
+    margin: 0 auto 100px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+@media (max-width: 1000px) {
+    .NotFound h1 {
+        font-size: 6rem;
+        margin: 70px auto 0;
+    }
+    .NotFound p {
+        font-size: 1rem;
+        max-width: 200px;
+        margin: 0 auto 70px;
+    }
+    .NotFound a {
+        font-size: 1rem;
+        padding: 8px 12px;
+        margin: 0 auto 70px;
+    }
+}

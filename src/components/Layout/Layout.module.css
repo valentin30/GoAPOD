@@ -1,0 +1,12 @@
+.Main {
+    padding-top: 75px;
+    padding-bottom: 320px;
+    position: relative;
+}
+
+@media (max-width: 1250px) {
+    .Main {
+        padding-top: 65px;
+        padding-bottom: 720px;
+    }
+}

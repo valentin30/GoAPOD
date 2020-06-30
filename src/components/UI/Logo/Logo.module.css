@@ -1,0 +1,11 @@
+.Logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 2.2rem;
+}
+@media (max-width: 1000px) {
+    .Logo {
+        font-size: 1.5rem;
+    }
+}

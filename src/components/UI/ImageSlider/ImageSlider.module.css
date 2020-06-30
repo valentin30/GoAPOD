@@ -1,0 +1,119 @@
+.ImageSlider {
+    margin: auto;
+    padding: 100px 0;
+    background-color: whitesmoke;
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 80px 0;
+}
+.Slider {
+    display: flex;
+    overflow: hidden;
+    max-width: 800px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    background-color: #afafaf;
+}
+.Slider div {
+    transition: 1s;
+    width: 800px;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}
+img {
+    object-fit: cover;
+    display: block;
+    width: 800px;
+    height: 100%;
+}
+.Like {
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    bottom: 8px;
+    right: 8px;
+    font-size: 2rem;
+}
+.Prev,
+.Next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    border-left: 1.5px solid white;
+    border-bottom: 1.5px solid white;
+}
+.Prev {
+    left: 20px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.Next {
+    right: 20px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+.Link {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
+.Loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+@media (max-width: 850px) {
+    .ImageSlider {
+        padding: 70px 0;
+    }
+    .Slider {
+        width: 90vw;
+        height: 450px;
+    }
+    .Slider div {
+        width: 90vw;
+    }
+    img {
+        width: 90vw;
+    }
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 650px) {
+    .Slider {
+        width: 100vw;
+        height: 350px;
+    }
+    .Slider div {
+        width: 100vw;
+    }
+    img {
+        width: 100vw;
+    }
+}
+@media (max-width: 550px) {
+    .Slider {
+        height: 250px;
+    }
+    .Link {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+    }
+}

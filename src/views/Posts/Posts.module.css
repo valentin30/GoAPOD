@@ -1,0 +1,36 @@
+.Posts {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-gap: 75px;
+    max-width: 1200px;
+    margin: 75px auto;
+}
+.Loader {
+    grid-column: 1/4;
+}
+@media (max-width: 1300px) {
+    .Posts {
+        grid-gap: 20px;
+        max-width: fit-content;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 1150px) {
+    .Posts {
+        grid-template-columns: 350px 350px;
+        grid-gap: 75px;
+        margin: 75px auto;
+    }
+}
+@media (max-width: 850px) {
+    .Posts {
+        grid-gap: 20px;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 770px) {
+    .Posts {
+        grid-template-columns: 1fr;
+    }
+}
